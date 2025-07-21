@@ -37,7 +37,29 @@
         <h2>~$ Projects/</h2>
         <p class="code">$ ls -l --big-font projects/</p>
         <ul>
-            <li>project item list</li>
+        {% for project in projects %}
+            <li>
+                <a href="#">
+                <span class="project-symbol">></span>
+                <span>
+                    <span>[</span>
+
+                    {% for tech in project.technologies %}
+                    <span> {{ tech }} </span>
+                    {% if not loop.last %} <span>|</span> {% endif %}
+                    {% endfor %}
+
+                    <span>]</span>
+                </span>
+                <span>
+                    <span>user</span>
+                    <span>Brian</span>
+                </span>
+                <span>{{ project.date }}</span>
+                <div>{{ project.name }}</div>
+                </a>
+            </li>
+        {% endfor %}
         </ul>
     </section>
 
