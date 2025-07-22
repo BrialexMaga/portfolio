@@ -14,9 +14,10 @@ def load_json(file_name: str) -> list[dict]:
 def home():
     projects = load_json("projects")
     skills = load_json("skills")
+    certificates = load_json("certificates")
 
     return render_template("index.html", 
-                           projects=projects, skills=skills)
+                           projects=projects, skills=skills, certificates=certificates)
 
 if __name__=="__main__":
     app.run(debug=True)

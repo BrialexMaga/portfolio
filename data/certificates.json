@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Huawei Internet of Things (IoT)",
+        "company": "Huawei Technologies",
+        "year": "2023",
+        "skills": ["IoT", "Wireless Connectivity Technologies"]
+    },
+    {
+        "name": "Huawei Cloud Computing",
+        "company": "Huawei Technologies",
+        "year": "2023",
+        "skills": ["Cloud Basics", "Virtual Machines", "Web Networking"]
+    },
+    {
+        "name": "DevOps Crash Course",
+        "company": "SoftServe",
+        "year": "2023",
+        "skills": ["DevOps", "CI/CD", "Cloud Services"]
+    }
+]

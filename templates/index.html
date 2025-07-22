@@ -85,7 +85,17 @@
         <h2>~$ Education/</h2>
         <p class="code">$ cat education.txt --bigger-font</p>
         <ul>
-            <li>Education items</li>
+            <li>
+                <p>Bachelor of Computer Engineering</p>
+                <p>Universidad de Guadalajara --- 2018 - 2024</p>
+            </li>
+            {% for certificate in certificates %}
+            <li>
+                <p><span>Certificate:</span> {{ certificate.name }} </p>
+                <p> {{ certificate.company }} --- {{ certificate.year }} </p>
+                <p><span>Skills:</span> {{ ", ".join(certificate.skills) }} </p>
+            </li>
+            {% endfor %}
         </ul>
     </section>
 
