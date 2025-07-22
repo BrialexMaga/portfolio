@@ -13,8 +13,10 @@ def load_json(file_name: str) -> list[dict]:
 @app.route("/")
 def home():
     projects = load_json("projects")
+    skills = load_json("skills")
 
-    return render_template("index.html", projects=projects)
+    return render_template("index.html", 
+                           projects=projects, skills=skills)
 
 if __name__=="__main__":
     app.run(debug=True)

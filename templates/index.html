@@ -67,7 +67,17 @@
         <h2>~$ Skills/</h2>
         <p class="code">$ tree skills/</p>
         <ul>
-            <li>skill items</li>
+            <li>skills/</li>
+            <ul>
+                {% for category, content in skills.items() %}
+                <li> {{ category }}/ </li>
+                <ul>
+                    {% for skill in content.technologies %}
+                    <li> <span>|img|</span> {{ skill }}.skill </li>
+                    {% endfor %}
+                </ul>
+                {% endfor %}
+            </ul>
         </ul>
     </section>
 

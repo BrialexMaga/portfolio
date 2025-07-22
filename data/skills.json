@@ -1,0 +1,14 @@
+{
+    "backend": {
+        "technologies": ["django", "flask", "fastapi", "rest", "openapi", "sql_databases"]
+    },
+    "tools": {
+        "technologies": ["git", "github"]
+    },
+    "web_basics": {
+        "technologies": ["html", "css", "javascript", "bootstrap"]
+    },
+    "other_languages": {
+        "technologies": ["c_cpp", "csharp", "php"]
+    }
+}
