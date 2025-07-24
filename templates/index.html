@@ -23,15 +23,15 @@
         <h1>I am Brian Magana</h1>
         <p>BACKEND DEVELOPER</p>
         <p>Developing solutions to common problems</p>
-        <button>> Contact Me</button>
-        <button>> Learn More</button>
+        <a href="#contact">> Contact Me</a>
+        <a href="#about-me">> Learn More</a>
     </section>
 
     <section id="about-me">
         <h2>~$ About Me/</h2>
         <p class="code">$ cat about_me.txt</p>
         <p>I'm a backend-focused developer with experience building Python web applications using Django. I'm always looking to expand my knowledge and take pride in delivering well-crafted, reliable solutions. Passionate about technology, I aim for quality and attention to detail in every project I work on.</p>
-        <button>> Download Resume</button>
+        <a href="{{ url_for('static', filename='files/CV.pdf') }}" target="_blank">> Open Resume</a>
     </section>
 
     <section id="projects">
