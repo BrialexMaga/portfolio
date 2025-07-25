@@ -1,9 +1,23 @@
+:root {
+    --main-color: #2DA567;
+    --secondary-color: #A52D6B;
+}
+
+
 html {
     box-sizing: border-box;
+
+    background-color: #161616;
+    color: white;
+    font-family: 'Aldrich', sans-serif;
 }
 
 *,
 *::after,
 *::before {
     box-sizing: inherit;
+}
+
+body {
+    padding: 0;
 }
