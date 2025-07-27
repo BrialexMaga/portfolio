@@ -18,6 +18,36 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    padding: 0;
+.content {
+    padding: 0 10%;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+    margin: 0;
+}
+
+.navbar ul {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.simple-link {
+    text-decoration: none;
+    color: hsl(0 0 60%);
+    font-weight: bold;
+
+    transition: color 0.3s ease;
+}
+
+.simple-link:hover {
+    color: hsl(0 0 80%);
+}
+
+.simple-link:active {
+    color: hsl(0 0 100%);
 }
