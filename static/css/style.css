@@ -1,11 +1,16 @@
 :root {
     --main-color: #2DA567;
     --secondary-color: #A52D6B;
+    --code-text-color: hsl(0 0 60%);
 }
 
 
 html {
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 100%;
 
     background-color: #161616;
     color: white;
@@ -19,7 +24,7 @@ html {
 }
 
 .content {
-    padding: 0 10%;
+    padding: 0;
 }
 
 .navbar {
@@ -51,3 +56,48 @@ html {
 .simple-link:active {
     color: hsl(0 0 100%);
 }
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 16px 24px;
+    border-radius: 1px;
+
+    color: black;
+    background-color: var(--main-color);
+    transition: all 0.1s ease;
+}
+
+.btn:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+  }
+  
+  .btn:active {
+    filter: brightness(0.9);
+    transform: translateY(0);
+  }
+
+.section {
+    margin: 0 auto;
+
+    max-width: 80vw;
+    height: 95vh;
+}
+
+.scroll-into {
+    scroll-snap-align: start;
+}
+
+.code {
+    color: var(--code-text-color);
+}
+
+/*
+#hero {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+*/

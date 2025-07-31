@@ -12,7 +12,7 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
+    <header class="scroll-into">
         <nav>
         <ul class="navbar">
             <li><a class="simple-link" href="#">> Home</a></li>
@@ -26,29 +26,31 @@
     </header>
 
     <main class="content">
-    <section id="hero">
+    <section class="section" id="hero">
         <p class="code">$ whoami</p>
         <h1>I am Brian Magana</h1>
         <p>BACKEND DEVELOPER</p>
         <p>Developing solutions to common problems</p>
-        <a href="#contact">> Contact Me</a>
-        <a href="#about-me">> Learn More</a>
+        <div>
+            <a class="btn" href="#contact">> Contact Me</a>
+            <a class="btn" href="#about-me">> Learn More</a>
+        </div>
     </section>
 
-    <section id="about-me">
+    <section class="section scroll-into" id="about-me">
         <h2>~$ About Me/</h2>
         <p class="code">$ cat about_me.txt</p>
         <p>I'm a backend-focused developer with experience building Python web applications using Django. I'm always looking to expand my knowledge and take pride in delivering well-crafted, reliable solutions. Passionate about technology, I aim for quality and attention to detail in every project I work on.</p>
-        <a href="{{ url_for('static', filename='files/CV.pdf') }}" target="_blank">> Open Resume</a>
+        <a class="btn" href="{{ url_for('static', filename='files/CV.pdf') }}" target="_blank">> Open Resume</a>
     </section>
 
-    <section id="projects">
+    <section class="section scroll-into" id="projects">
         <h2>~$ Projects/</h2>
         <p class="code">$ ls -l --big-font projects/</p>
         <ul>
         {% for project in projects %}
             <li>
-                <a href="#">
+                <a class="simple-link" href="#">
                 <span class="project-symbol">></span>
                 <span>
                     <span>[</span>
@@ -72,7 +74,7 @@
         </ul>
     </section>
 
-    <section id="skills">
+    <section class="section scroll-into" id="skills">
         <h2>~$ Skills/</h2>
         <p class="code">$ tree skills/</p>
         <ul>
@@ -90,7 +92,7 @@
         </ul>
     </section>
 
-    <section id="education">
+    <section class="section scroll-into" id="education">
         <h2>~$ Education/</h2>
         <p class="code">$ cat education.txt --bigger-font</p>
         <ul>
@@ -108,7 +110,7 @@
         </ul>
     </section>
 
-    <section id="contact">
+    <section class="section scroll-into" id="contact">
         <h2>~$ Contact/</h2>
         <p class="code">~$ cat contact.txt --center</p>
         <div class="card">
