@@ -60,9 +60,10 @@ html {
 .btn {
     display: inline-block;
     text-decoration: none;
-    padding: 16px 24px;
+    padding: 20px 32px;
     border-radius: 1px;
 
+    font-size: 1.25rem;
     color: black;
     background-color: var(--main-color);
     transition: all 0.1s ease;
