@@ -91,6 +91,8 @@ html {
 
 .code {
     color: var(--code-text-color);
+    font-size: 1.25rem;
+    margin-bottom: 12px;
 }
 
 .green-text {
