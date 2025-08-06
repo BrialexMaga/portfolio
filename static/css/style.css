@@ -1,6 +1,10 @@
 :root {
+    /*
     --main-color: #2DA567;
     --secondary-color: #A52D6B;
+    */
+    --main-color: hsl(149, 57%, 41%);
+    --secondary-color: hsl(329, 57%, 41%);
     --code-text-color: hsl(0 0 60%);
 }
 
@@ -81,6 +85,7 @@ html {
 
 .section {
     margin: 0 auto;
+    padding-top: 10vh;
 
     max-width: 80vw;
     height: 95vh;
@@ -93,7 +98,7 @@ html {
 .code {
     color: var(--code-text-color);
     font-size: 1.25rem;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 .green-text {
@@ -108,6 +113,7 @@ html {
 #hero {
     display: flex;
     margin-top: 20vh;
+    padding-top: 0;
     
     flex-direction: column;
     align-items: center;
@@ -144,9 +150,6 @@ h2 {
     font-size: 2rem;
 }
 
-#about-me {
-    padding-top: 10vh;
-}
 
 #about-me .yapping {
     margin-top: 0;
@@ -157,4 +160,59 @@ h2 {
 
 #about-me .indented {
     padding-left: 15%;
+}
+
+#projects .project-name{
+    flex-basis: 100%;
+
+    font-size: 1.75rem;
+    margin-top: 4px;
+}
+
+#projects .simple-link{
+    color: hsl(0 0 80%);
+}
+
+#projects .simple-link:hover{
+    color: hsl(0 0 100%);
+}
+
+#projects .simple-link:active{
+    color: hsl(0 0 100%);
+}
+
+.simple-link .green-text{
+    color: hsl(149, 57%, 41%);
+    transition: color 0.3s ease;
+}
+
+.simple-link:hover .green-text {
+    color: hsl(149, 57%, 51%);
+}
+  
+.simple-link:active .green-text {
+    color: hsl(149, 57%, 51%);
+}
+
+#projects .project-list {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+#projects .project-list .item {
+    margin-bottom: 36px;
+}
+
+#projects .project-list .project-link {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 0;
+
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.project-link .skills {
+    flex-basis: 60%;
 }

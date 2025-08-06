@@ -52,27 +52,21 @@
     <section class="section scroll-into" id="projects">
         <h2>~$ Projects/</h2>
         <p class="code">$ ls -l --big-font projects/</p>
-        <ul>
+        <ul class="project-list">
         {% for project in projects %}
-            <li>
-                <a class="simple-link" href="#">
-                <span class="project-symbol">></span>
-                <span>
-                    <span>[</span>
-
+            <li class="item">
+                <a class="simple-link project-link" href="#projects">
+                <span class="skills">
+                    > [
                     {% for tech in project.technologies %}
                     <span> {{ tech }} </span>
                     {% if not loop.last %} <span>|</span> {% endif %}
                     {% endfor %}
-
-                    <span>]</span>
+                    ]
                 </span>
-                <span>
-                    <span>user</span>
-                    <span>Brian</span>
-                </span>
+                <span>user Brian</span>
                 <span>{{ project.date }}</span>
-                <div>{{ project.name }}</div>
+                <div class="green-text project-name">{{ project.name }}</div>
                 </a>
             </li>
         {% endfor %}
