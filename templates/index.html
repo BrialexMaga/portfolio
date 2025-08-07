@@ -76,14 +76,14 @@
     <section class="section scroll-into" id="skills">
         <h2>~$ Skills/</h2>
         <p class="code">$ tree skills/</p>
-        <ul>
-            <li>skills/</li>
+        <ul class="skill-tree">
+            <span>skills/</span>
             <ul>
                 {% for category, content in skills.items() %}
-                <li> {{ category }}/ </li>
+                <span class="node"> {{ category }}/ </span>
                 <ul>
                     {% for skill in content.technologies %}
-                    <li> <span>|img|</span> {{ skill }}.skill </li>
+                    <li><span class="leaf"> {{ skill }}.skill </span></li>
                     {% endfor %}
                 </ul>
                 {% endfor %}
