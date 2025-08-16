@@ -42,6 +42,7 @@ body {
     justify-content: flex-end;
     padding: 1rem 2rem;
     margin: 0;
+    padding-top: 1.75rem;
 }
 
 .navbar ul {
@@ -68,10 +69,10 @@ body {
 .btn {
     display: inline-block;
     text-decoration: none;
-    padding: 20px 32px;
+    padding: 25px 42px;
     border-radius: 1px;
 
-    font-size: 1.25rem;
+    font-size: 1.25em;
     color: black;
     background-color: var(--main-color);
     transition: all 0.1s ease;
@@ -80,18 +81,23 @@ body {
 .btn:hover {
     filter: brightness(1.1);
     transform: translateY(-1px);
-  }
+}
   
-  .btn:active {
+.btn:active {
     filter: brightness(0.9);
     transform: translateY(0);
-  }
+}
+
+.smaller-button {
+    padding: 24px 36px;
+}
 
 .section {
     margin: 0 auto;
     padding-top: 10vh;
 
-    max-width: 80vw;
+    min-width: 990px;
+    max-width: 1000px;
     height: 95vh;
 }
 
@@ -101,7 +107,7 @@ body {
 
 .code {
     color: var(--code-text-color);
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 0.75rem;
 }
 
@@ -116,7 +122,7 @@ body {
 
 #hero {
     display: flex;
-    margin-top: 20vh;
+    margin-top: 16vh;
     padding-top: 0;
     
     flex-direction: column;
@@ -126,24 +132,27 @@ body {
 #hero h1 {
     margin: 0;
 
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: normal;
 }
 
 #hero .title {
-    margin: 12px 0 0 0;
-    font-size: 4rem;
+    margin: 0;
+    margin-top: 0.75rem;
+    font-size: 5rem;
 }
 
 #hero .slogan {
-    margin: 8px 0 80px 0;
-    font-size: 1.25rem;
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 6rem;
+    font-size: 1.5rem;
 }
 
 #hero .btn-container {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 h2 {
@@ -157,9 +166,10 @@ h2 {
 
 #about-me .yapping {
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 5rem;
 
     font-size: 1.25rem;
+    line-height: 1.6;
 }
 
 #about-me .indented {
@@ -204,7 +214,7 @@ h2 {
 }
 
 #projects .project-list .item {
-    margin-bottom: 36px;
+    margin-bottom: 3.5rem;
 }
 
 #projects .project-list .project-link {
@@ -264,11 +274,12 @@ h2 {
 
 .education-list {
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    padding-left: 4rem;
 }
 
 .career-name {
-    font-size: 1.75rem;
+    font-size: 2rem;
 }
 
 .education-list p {
@@ -285,7 +296,7 @@ h2 {
 }
 
 .card {
-    max-width: 440px;
+    max-width: 580px;
     border: white solid 1px;
     margin: 3rem auto;
     padding-left: 90px;
@@ -299,13 +310,13 @@ h2 {
 .card .name-info {
     margin-top: 1em;
     margin-bottom: 0.1em;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 .title-info {
     position: relative;
     display: inline-block; 
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .title-info::after {
@@ -317,7 +328,8 @@ h2 {
 }
 
 .contact-item {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
 
     display: flex;
     align-items: center;
@@ -326,7 +338,7 @@ h2 {
 
 .contact-icon {
     fill: white;
-    height: 2em;
+    height: 2.5em;
     width: auto;
 
     margin-right: 1em;
@@ -342,6 +354,8 @@ h2 {
 }
 
 .footer {
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0.75rem 0;
 
@@ -351,7 +365,5 @@ h2 {
 
 .footer p {
     margin: 0;
-    padding-left: 0.5rem;
-
     color: black;
 }

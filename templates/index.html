@@ -28,7 +28,7 @@
     <main class="content">
     <section class="section" id="hero">
         <p class="code">$ whoami</p>
-        <h1>I am Brian Magana</h1>
+        <h1>I am Brian Magaña</h1>
         <p class="title green-text">BACKEND DEVELOPER</p>
         <p class="slogan">Developing solutions to common problems</p>
         <div class="btn-container">
@@ -45,13 +45,13 @@
                 I'm a backend-focused developer with experience building Python web applications using Django. 
                 I'm always looking to expand my knowledge and take pride in delivering well-crafted, reliable solutions. 
                 <span>Passionate about technology, I aim for quality and attention to detail in every project I work on.</span></p>
-            <a class="btn" href="{{ url_for('static', filename='files/CV.pdf') }}" target="_blank">> Open Resume</a>
+            <a class="btn smaller-button" href="{{ url_for('static', filename='files/CV.pdf') }}" target="_blank">> Open Resume</a>
         </div>
     </section>
 
     <section class="section scroll-into" id="projects">
         <h2>~$ Projects/</h2>
-        <p class="code">$ ls -l --big-font projects/</p>
+        <p class="code">$ ls -l projects/</p>
         <ul class="project-list">
         {% for project in projects %}
             <li class="item">
@@ -113,7 +113,7 @@
         <h2>~$ Contact/</h2>
         <p class="code">~$ cat contact.txt --center</p>
         <div class="card">
-            <p class="name-info">Brian Magana</p>
+            <p class="name-info">Brian Magaña</p>
             <p class="title-info">Backend Developer</p>
             <!--
             <div class="contact-item">
