@@ -19,5 +19,15 @@ def home():
     return render_template("index.html", 
                            projects=projects, skills=skills, certificates=certificates)
 
+# project details routes
+# project id must match the function names
+@app.route("/projects/school-system")
+def schoolSystem():
+    return render_template("projects/school-system.html")
+
+@app.route("/projects/robot")
+def robot():
+    return render_template("projects/robot.html")
+
 if __name__=="__main__":
     app.run(debug=True)

@@ -55,7 +55,7 @@
         <ul class="project-list">
         {% for project in projects %}
             <li class="item">
-                <a class="simple-link project-link" href="#projects">
+                <a class="simple-link project-link" href="{{ url_for('' ~ project.id) }}">
                 <span class="skills">
                     > [
                     {% for tech in project.technologies %}

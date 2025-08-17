@@ -1,11 +1,13 @@
 [
     {
+        "id": "schoolSystem",
         "name": "School Analysis System",
         "date": "2024-Jul",
         "technologies": ["django", "bootstrap", "postgresql", "AI"]
     },
 
     {
+        "id": "robot",
         "name": "'ROBOT'",
         "date": "2023-Aug",
         "technologies": ["docker", "ci/cd", "azure"]
