@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Load Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
-    <link rel="stylesheet" href={{ url_for('static', filename="css/style.css") }}>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project</title>
 </head>
-<body>
-    <h1>ROBOT</h1>
-    <a href="/">Go back</a>
+<body class="body-bottom-space">
+    <div class="wrapper">
+    <section class="section no-height no-padding no-width">
+        <a href="/">
+            <svg class="return-icon" height="20px" width="auto" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title/><polyline points="112 160 48 224 112 288" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><path d="M64,224H358c58.76,0,106,49.33,106,108v20" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+        </a>
+        <h1 class="code">$ man robot</h1>
+        <h2 class="man-title less-margin-title">NAME</h2>
+        <p class="man-content">Interactive Page 'ROBOT'</p>
+    </section>
+
+    <section class="section no-height no-padding no-width">
+        <h2 class="man-title">SYNOPSIS</h2>
+        <p class="man-content">
+            Small web app using Express.js that simulated a robot control pannel,
+            which needed to set up some automation processes, including triggers, pipelines, and deployment scripts, to implement CI/CD on the server.
+            <span class="description-br">The scripts were written in Python and Bash, and the server was deployed on Microsoft Azure.</span>
+        </p>
+    </section>
+
+    <section class="section no-height no-padding no-width">
+        <h2 class="man-title">DESCRIPTION</h2>
+        <p class="man-content">
+            This project was part of a DevOps course. I was assigned to a small team, and our final project was a robot control panel implemented as a webpage, 
+            where we applied the DevOps knowledge we had learned.
+
+            <span class="description-section">
+                My tasks included setting up all the triggers, pipelines, the server, and several scripts.
+            </span>
+
+            <span class="description-section">
+                The scripts, written in Python and Bash, were used to generate random data on the webpage to display in the control panel. 
+                The triggers and pipelines were configured using GitHub Actions, since the project was already hosted on GitHub. I wrote YAML code to set them up. 
+                <span class="description-br">
+                    The server was deployed on Microsoft Azure, mainly because I had access to a free trial as a university student.
+                </span>
+            </span>
+            
+            <span class="description-section">
+                I presented our project, and we received positive feedback from the mentors. After the course, I even received a job offer, but unfortunately, 
+                I had to decline due to scheduling conflicts with my university studies.
+            </span>
+        </p>
+    </section>
+
+    <section class="section no-height no-padding no-width">
+        <h2 class="man-title">AUTHOR</h2>
+        <p class="man-content">Brian Magaña</p>
+    </section>
+
+    <section class="section no-height no-padding no-width">
+        <h2 class="man-title">SEE ALSO</h2>
+        <p class="man-content">
+            Link to repository: 
+            <a class="simple-link paddin-left-link" href="https://github.com/BrialexMaga/ROBOT" target="_blank">github.com/BrialexMaga/ROBOT</a></p>
+    </section>
+    </div>
 </body>
 </html>

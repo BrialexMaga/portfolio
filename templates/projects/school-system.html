@@ -1,13 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Load Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
-    <link rel="stylesheet" href={{ url_for('static', filename="css/style.css") }}>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project</title>
 </head>
-<body>
-    <h1>school system</h1>
-    <a href="/">Go back</a>
+<body class="body-bottom-space">
+    <div class="wrapper">
+        <section class="section no-height no-padding no-width">
+            <a href="/">
+                <svg class="return-icon" height="20px" width="auto" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title/><polyline points="112 160 48 224 112 288" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><path d="M64,224H358c58.76,0,106,49.33,106,108v20" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+            </a>
+            <h1 class="code">$ man school-system</h1>
+            <h2 class="man-title less-margin-title">NAME</h2>
+            <p class="man-content">School Analysis System</p>
+        </section>
+    
+        <section class="section no-height no-padding no-width">
+            <h2 class="man-title">SYNOPSIS</h2>
+            <p class="man-content">
+                A Django based web application designed to manage student information, academic records, and administrative processes. 
+                It integrated PostgreSQL for data handling and incorporated a small machine learning model to predict student failure risk.
+            </p>
+        </section>
+    
+        <section class="section no-height no-padding no-width">
+            <h2 class="man-title">DESCRIPTION</h2>
+            <p class="man-content">
+                One of the administrative sections of the school handled everything manually,
+                every process had to be carried out and searched one by one, consuming a lot of time and energy on tasks that could have been automated. 
+                <span class="description-br">
+                    The objective was then, to create a solution that would act as an intermediary, process all the data, and generate the required documents.
+                </span>
+
+                <span class="description-section">
+                    I was in charge of designing and creating the solution from the ground up, ensuring that the administration's requirements were met.
+                </span>
+
+                <span class="description-section">
+                    I held multiple meetings with the administrator to gather requirements, discuss how they needed to be met, and define the platforms to be used. 
+                    After collecting both functional and non-functional requirements, I decided to build a web application. 
+                    <span class="description-br">
+                        I chose Django as the main framework, 
+                        leveraging my expertise in Python and Django's 'batteries-included' architecture to accelerate development. For the database, I selected PostgreSQL due to its 
+                        strong compatibility with Django. 
+                    </span>
+                    <span class="description-br">
+                        Since one of the requirements was a prediction tool, I implemented a machine learning model using scikit-learn to estimate 
+                        the likelihood of student failure. The biggest challenge was integrating with the school's legacy system, which was highly problematic. 
+                    </span>   
+                    <span class="description-br">
+                        The final solution involved connecting to the system's API to replicate part of its database, enabling processing and the automated generation of required documents.
+                        I worked alongside a colleague who was responsible for setting up the servers and implementing fault-tolerance strategies with Kubernetes.
+                    </span>
+                    <span class="description-br">
+                        I also received continuous input from several professionals who helped guide the design of the solution. This professionals weren't part of the team,
+                        but they played a very important role in this project for me. I'm very grateful with them and with my colleague for working with me.
+                    </span>
+                </span>
+                    
+                <span class="description-section">
+                    Although the project ultimately stalled due to the school not granting API access, it was successfully developed to the prototype stage and formally 
+                    presented. 
+                    <span class="description-br">
+                        Despite the school later prioritizing another internal initiative, our prototype earned positive feedback from teachers and researchers 
+                        and was recognized as fulfilling the requirements for graduation. 
+                    </span>
+                    <span class="description-br">
+                        The experience not only strengthened my technical skills but also gave me valuable 
+                        insights into real-world constraints, stakeholder management, and the importance of adaptability in software projects.
+                    </span>
+                </span>
+            </p>
+        </section>
+    
+        <section class="section no-height no-padding no-width">
+            <h2 class="man-title">AUTHOR</h2>
+            <p class="man-content">Brian Magaña</p>
+        </section>
+    
+        <section class="section no-height no-padding no-width">
+            <h2 class="man-title">SEE ALSO</h2>
+            <p class="man-content">
+                Link to repository: 
+                <a class="simple-link paddin-left-link" href="https://github.com/BrialexMaga/coordinacion" target="_blank">github.com/BrialexMaga/coordinacion</a></p>
+            </p>
+        </section>
+        </div>
 </body>
 </html>
