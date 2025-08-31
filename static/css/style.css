@@ -6,6 +6,7 @@
     --main-color: hsl(149, 57%, 41%);
     --secondary-color: hsl(329, 57%, 41%);
     --code-text-color: hsl(0 0 60%);
+    --bg-color: #161616;
 }
 
 
@@ -16,7 +17,7 @@ html {
     overflow-y: scroll;
     height: 100%;
 
-    background-color: #161616;
+    background-color: var(--bg-color);
     color: white;
     font-family: 'Aldrich', sans-serif;
 }
@@ -36,6 +37,13 @@ body {
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: var(--bg-color);
+
     list-style: none;
     display: flex;
     gap: 1.5rem;
@@ -123,8 +131,7 @@ body {
 
 #hero {
     display: flex;
-    margin-top: 16vh;
-    padding-top: 0;
+    padding-top: 22vh;
     
     flex-direction: column;
     align-items: center;
