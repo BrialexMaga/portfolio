@@ -109,6 +109,14 @@ body {
     height: 95vh;
 }
 
+.section-full-height {
+    height: 100vh;
+}
+
+.section-skills-height {
+    height: 800px;
+}
+
 .scroll-into {
     scroll-snap-align: start;
 }
