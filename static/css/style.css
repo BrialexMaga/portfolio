@@ -316,6 +316,7 @@ h2 {
     border: white solid 1px;
     margin: 3rem auto;
     padding-left: 90px;
+    padding-bottom: 1em;
 }
 
 .card p {
@@ -344,7 +345,7 @@ h2 {
 }
 
 .contact-item {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-size: 1.25rem;
 
     display: flex;
@@ -354,7 +355,7 @@ h2 {
 
 .contact-icon {
     fill: white;
-    height: 2.5em;
+    height: 2.25em;
     width: auto;
 
     margin-right: 1em;

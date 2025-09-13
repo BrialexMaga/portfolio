@@ -20,10 +20,11 @@ document.addEventListener("DOMContentLoaded", function() {
     linkedinElement.textContent = `${domainLinked}.${topDomain}/${firstSection}/${userLinked}`;
 
     // e-mail maker
-    /*
-    const user = "brian.alexis.p1999";
-    const domain = "gmail";
+    const user = "contact";
+    const domain = "brianmagana";
+    const devDomain = "dev"
+    const prefix = "mailto"
 
-    emailElement.textContent = `${user}@${domain}.${topDomain}`;
-    */
+    emailElement.href = `${prefix}:${user}@${domain}.${devDomain}`;
+    emailElement.textContent = `${user}@${domain}.${devDomain}`;
 });
