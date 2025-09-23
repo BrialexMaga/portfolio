@@ -503,7 +503,7 @@ h2 {
         min-width: auto;
         max-width: auto;
         padding: 10%;
-        padding-top: 10vh;
+        padding-top: 15vh;
     }
 
     #hero {
@@ -534,6 +534,15 @@ h2 {
         width: 75vw;
         padding: 20px 42px;
         border-radius: 4px;
+    }
+
+    .breakline {
+        display: block;
+        margin-top: 1.5rem;
+    }
+
+    .smaller-button {
+        width: 55vw;
     }
 }
 
