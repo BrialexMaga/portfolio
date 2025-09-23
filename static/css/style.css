@@ -485,3 +485,86 @@ h2 {
 .body-bottom-space {
     padding-bottom: 20vh;
 }
+
+
+
+
+/* Phones */
+@media (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    .navbar {
+        font-size: 1rem;
+    }
+
+    .section {
+        min-width: auto;
+        max-width: auto;
+        padding: 10%;
+        padding-top: 10vh;
+    }
+
+    #hero {
+        padding-top: 36vh;
+    }
+    
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    #hero .title {
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    #hero .slogan {
+        font-size: 1.5rem;
+    }
+    
+    #hero .btn-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .btn {
+        text-align: center;
+        width: 75vw;
+        padding: 20px 42px;
+        border-radius: 4px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .navbar {
+        font-size: 0.75rem;
+    }
+    
+    #hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    #hero .title {
+        font-size: 2rem;
+    }
+    
+    #hero .slogan {
+        font-size: 1rem;
+    }
+}
+
+
+
+@media (max-width: 375px) {
+    #hero .title {
+        font-size: 2rem;
+    }
+
+    .navbar {
+        font-size: 0.65rem;
+    }
+}
