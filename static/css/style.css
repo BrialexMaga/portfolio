@@ -544,6 +544,10 @@ h2 {
     .smaller-button {
         width: 55vw;
     }
+
+    .project-link .skills {
+        flex-basis: auto;
+    }
 }
 
 
