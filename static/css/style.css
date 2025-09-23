@@ -548,6 +548,16 @@ h2 {
     .project-link .skills {
         flex-basis: auto;
     }
+
+    .section-skills-height {
+        padding-top: 10vh;
+        height: 100vh;
+    }
+
+    .skill-tree,
+    .skill-tree ul {
+        font-size: 1.75rem;
+    }
 }
 
 
@@ -568,6 +578,14 @@ h2 {
     #hero .slogan {
         font-size: 1rem;
     }
+
+    .career-name {
+        font-size: 1.75rem;
+    }
+
+    .education-list {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -579,5 +597,18 @@ h2 {
 
     .navbar {
         font-size: 0.65rem;
+    }
+
+    .skill-tree,
+    .skill-tree ul {
+        font-size: 1.5rem;
+    }
+
+    .career-name {
+        font-size: 1.5rem;
+    }
+
+    .education-list {
+        font-size: 1.25rem;
     }
 }
