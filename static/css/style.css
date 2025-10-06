@@ -563,21 +563,35 @@ h2 {
     .card {
         padding-left: 10vw;
     }
+
+
+    /* Project Description Phones */
+    .wrapper {
+        padding: 2rem;
+        padding-right: 2.5rem;
+        margin: 0;
+        min-width: auto;
+        max-width: auto;
+    }
+
+    .body-bottom-space {
+        padding-bottom: 0;
+    }
 }
 
 
 
 @media (max-width: 480px) {
     .navbar {
-        font-size: 0.75rem;
+        font-size: 0.70rem;
     }
     
     #hero h1 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
     
     #hero .title {
-        font-size: 2rem;
+        font-size: 2.20rem;
     }
     
     #hero .slogan {
