@@ -1,7 +1,7 @@
 [
     {
         "id": "cinemadd",
-        "name": "Booking System CinemaDD",
+        "name": "Cinemadd - Cinema Booking Simulator",
         "date": "2026-Jan",
         "technologies": ["python", "django", "postgresql", "bootstrap", "django testing framework"]
     },
