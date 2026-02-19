@@ -21,6 +21,10 @@ def home():
 
 # project details routes
 # project id must match the function names
+@app.route("/projects/cinemadd")
+def cinemadd():
+    return render_template("projects/cinemadd.html")
+
 @app.route("/projects/school-system")
 def schoolSystem():
     return render_template("projects/school-system.html")
@@ -30,4 +34,4 @@ def robot():
     return render_template("projects/robot.html")
 
 if __name__=="__main__":
-    app.run()
+    app.run(debug=False)
