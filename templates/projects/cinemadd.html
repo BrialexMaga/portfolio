@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Load Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project | Brian Magaña</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='icons/favicon.png') }}">
+</head>
+<body class="body-bottom-space">
+    <div class="wrapper">
+    <section class="no-height no-padding no-width">
+        <a href="/#projects">
+            <svg class="return-icon" height="20px" width="auto" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title/><polyline points="112 160 48 224 112 288" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><path d="M64,224H358c58.76,0,106,49.33,106,108v20" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+        </a>
+        <h1 class="code">$ man cinemadd</h1>
+        <h2 class="man-title less-margin-title">NAME</h2>
+        <p class="man-content">Booking System CinemaDD</p>
+    </section>
+
+    <section class="no-height no-padding no-width">
+        <h2 class="man-title">SYNOPSIS</h2>
+        <p class="man-content">
+            A Django based demo application that models a real cinema booking flow, from viewing available screenings to selecting and reserving seats.
+            <span class="description-br">It integrates PostgreSQL for data handling and Django Testing Framework to ensure code quality and reduce future errors.</span>
+        </p>
+    </section>
+
+    <section class="no-height no-padding no-width">
+        <h2 class="man-title">AUTHOR</h2>
+        <p class="man-content">Brian Magaña</p>
+    </section>
+
+    <section class="no-height no-padding no-width">
+        <h2 class="man-title">SEE ALSO</h2>
+        <p class="man-content">
+            Link to repository: 
+            <a class="simple-link paddin-left-link" href="https://github.com/BrialexMaga/cinemadd" target="_blank">github.com/BrialexMaga/cinemadd</a></p>
+    </section>
+    </div>
+</body>
+</html>

@@ -1,5 +1,12 @@
 [
     {
+        "id": "cinemadd",
+        "name": "Booking System CinemaDD",
+        "date": "2026-Jan",
+        "technologies": ["python", "django", "postgresql", "bootstrap", "django testing framework"]
+    },
+
+    {
         "id": "schoolSystem",
         "name": "School Analysis System",
         "date": "2024-Jul",
