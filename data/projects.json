@@ -3,7 +3,7 @@
         "id": "cinemadd",
         "name": "Cinemadd - Cinema Booking Simulator",
         "date": "2026-Jan",
-        "technologies": ["python", "django", "postgresql", "bootstrap", "django testing framework"]
+        "technologies": ["python", "django", "postgresql", "bootstrap", "django testing tools"]
     },
 
     {

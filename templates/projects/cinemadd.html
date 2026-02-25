@@ -27,8 +27,49 @@
         <h2 class="man-title">SYNOPSIS</h2>
         <p class="man-content">
             A Django based demo application that models a real cinema booking flow, from viewing available screenings to selecting and reserving seats.
-            <span class="description-br">It integrates PostgreSQL for data handling and Django Testing Framework to ensure code quality and reduce future errors.</span>
+            <span class="description-br">It integrates PostgreSQL for data handling and Django Testing Tools to ensure project integrity and reduce future errors.</span>
         </p>
+    </section>
+
+    <section class="no-height no-padding no-width">
+        <h2 class="man-title">DEV NOTES</h2>
+        <p class="man-content">
+            <span class="description-br">
+                The main objective of this project was to learn, and that was achieved by trying a more realistic data modeling with more defined business rules.
+            </span>
+
+            <span class="description-br">
+                The most difficult part of the project was by far, managing the status of each seat selected for reservation.
+                I wasn't entirely clear on the steps to follow to reserve the seats that the user wanted.
+                The process of obtaining the correct seats associated with each reservation proved to be more complicated than anticipated.
+            </span>
+            
+            <span class="description-br">
+                I solved it by separating the problem into parts, retrieving the users inputs, curating the information, 
+                performing a search of all related seats considering availability, and finally creating the seat reservation temporarily until the payment is confirmed, 
+                all under atomic transactions to ensure the integrity of the payments.
+            </span>
+            
+            <span class="description-br">
+                Maybe the most important thing I learned was to structure the system first. Having a clear action plan makes it easy to follow it when programming.
+            </span>
+            <span class="description-br">
+                On a more technical note, I learned to make better use of the Django Testing Tools to ensure the project functions correctly.
+            </span>
+
+            <span class="description-br">To improve the project, implementing Stripe as a payment processor could be considered. Additionally, seats are currently reserved 
+                in the database for 5 minutes. If a reservation isn't filled for any reason, a script to release those seats and make them available again would likely be 
+                the next step in improving this project.
+            </span>
+        </p>
+    </section>
+
+    <section class="no-height no-padding no-width">
+        <h2 class="man-title">IMAGES</h2>
+        <figure class="project-figure">
+            <img src="{{ url_for('static', filename='images/movies.webp') }}" alt="Movies List">
+            <figcaption class="img-caption">Fig. Cinema's Movies List</figcaption>
+        </figure>
     </section>
 
     <section class="no-height no-padding no-width">

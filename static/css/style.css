@@ -479,14 +479,31 @@ h2 {
 }
 
 .description-br {
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
 }
 
 .body-bottom-space {
     padding-bottom: 20vh;
 }
 
+img {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    max-width: 100%;
+    margin: 0 auto;
+}
 
+.img-caption{
+    text-align: center;
+    margin-top: 0.25em;
+}
+
+.project-figure{
+    margin-left: 2em;
+    margin-right: 0;
+}
 
 
 /* Phones */
