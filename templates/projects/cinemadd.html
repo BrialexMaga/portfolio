@@ -57,9 +57,10 @@
                 On a more technical note, I learned to make better use of the Django Testing Tools to ensure the project functions correctly.
             </span>
 
-            <span class="description-br">To improve the project, implementing Stripe as a payment processor could be considered. Additionally, seats are currently reserved 
-                in the database for 5 minutes. If a reservation isn't filled for any reason, a script to release those seats and make them available again would likely be 
+            <span class="description-br">Seats are currently reserved in the database for 5 minutes. 
+                If a reservation isn't filled for any reason, a script to release those seats and make them available again would likely be 
                 the next step in improving this project.
+                Additionally, implementing Stripe as a payment processor could be considered.
             </span>
         </p>
     </section>
@@ -67,7 +68,9 @@
     <section class="no-height no-padding no-width">
         <h2 class="man-title">IMAGES</h2>
         <figure class="project-figure">
-            <img src="{{ url_for('static', filename='images/movies.webp') }}" alt="Movies List">
+            <a href="{{ url_for('static', filename='images/movies.webp') }}" target="_blank">
+                <img src="{{ url_for('static', filename='images/movies.webp') }}" alt="Movies List">
+            </a>
             <figcaption class="img-caption">Fig. Cinema's Movies List</figcaption>
         </figure>
     </section>
